@@ -1,6 +1,6 @@
-FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 
-LABEL maintainer 's@muelcolvin.com'
+LABEL maintainer 'alexander.morosow@gmail.com'
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
@@ -19,7 +19,5 @@ RUN python3.6 -m pip install --no-cache-dir -U pip
 RUN python3.6 -m pip install --no-cache-dir -U setuptools
 # also useful
 RUN python3.6 -m pip install --no-cache-dir ipython requests numpy pandas quandl
-RUN python3.6 -m pip install --no-cache-dir tensorflow-gpu==1.3.0rc0
+RUN python3.6 -m pip install --no-cache-dir tensorflow-gpu==1.12.0
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
-
-CMD ["ipython"]
