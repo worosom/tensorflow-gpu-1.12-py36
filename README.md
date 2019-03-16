@@ -1,6 +1,7 @@
 # Docker TensorFlow with python 3.6 and GPU support
 
-[![docker](https://img.shields.io/docker/automated/morosow/tensorflow-gpu-1.12-py36.svg)](https://hub.docker.com/r/morosow/tensorflow-gpu-1.12-py36/)
+[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/morosow/tensorflow-gpu-1.12-py36.svg)](https://hub.docker.com/r/morosow/tensorflow-gpu-1.12-py36/)
+
 
 To pull
 
