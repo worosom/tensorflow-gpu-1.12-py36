@@ -18,6 +18,6 @@ RUN apt-get update \
 RUN python3.6 -m pip install --no-cache-dir -U pip
 RUN python3.6 -m pip install --no-cache-dir -U setuptools
 # also useful
-RUN python3.6 -m pip install --no-cache-dir ipython requests numpy pandas quandl
+RUN python3.6 -m pip install --no-cache-dir requests numpy pandas quandl imageio
 RUN python3.6 -m pip install --no-cache-dir tensorflow-gpu==1.12.0
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
