@@ -6,6 +6,7 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends \
         build-essential \
         curl \
+        wget \
         software-properties-common \
         python3-pip \
  && add-apt-repository -y ppa:jonathonf/python-3.6 \
